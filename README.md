@@ -1,0 +1,2 @@
+wp-theme-super-freq
+===================
