@@ -1,0 +1,669 @@
+/*   
+Theme Name: Web 2 Section 1 Theme
+Theme URI: http://newmedia.academyart.edu/~mhudson
+Description: Example Style for Web 2 Section 1. This was created for Spring 2012.
+Author: Mitchell Hudson
+Author URI: http://webdevils.com
+Version: 0.1
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: Gray
+*/
+
+
+
+/*
+Todo:
+
+Check Widget Styles
+Styles edit link in page.php
+Style comments list in page.php
+darken links in post-meta
+
+Finish comment form styles
+	add a background to fields 
+	style submit button
+
+modify background image to show backgroud color
+
+*/
+
+
+body {
+	background-color:#666;
+	
+	
+	background:url(stripe6.png) center, #515151; /* Old browsers */
+	background: url(stripe6.png) center, -moz-linear-gradient(top, #515151 0%, #666666 100%); /* FF3.6+ */
+	background: url(stripe6.png) center, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#515151), color-stop(100%,#666666)); /* Chrome,Safari4+ */
+	background: url(stripe6.png) center, -webkit-linear-gradient(top, #000 0%,#666666 50%); /* Chrome10+,Safari5.1+ */
+	background: url(stripe6.png) center, -o-linear-gradient(top, #515151 0%,#666666 100%); /* Opera 11.10+ */
+	background: url(stripe6.png) center, -ms-linear-gradient(top, #515151 0%,#666666 100%); /* IE10+ */
+	background: url(stripe6.png) center, linear-gradient(top, #515151 0%,#666666 100%); /* W3C */
+	
+	/* background-image:url(stripe6.png); */
+	/* background-image:url(pattern.png); */ 
+    margin:0;
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	 font-family: 'Dosis', sans-serif;
+}
+
+a {
+    text-decoration:none;
+}
+
+
+a:link {
+	
+}
+
+
+#wrap {
+	/* background-color:rgba( 0, 0, 0, 0.12); */
+	background-image:url(back.png);
+}
+
+body.page #wrap {
+	background-image:url(back-page.png);
+}
+
+#col-left{
+	/* background-color:rgba( 0, 0, 0, 0.20 ); */
+}
+
+
+
+
+
+
+
+
+/************************ Header ****************************/
+header>h1>a {
+	color:rgba(222, 222, 222, 1.0);
+	text-shadow: 1px 1px 1px rgba(0,0,0,1.0)
+}
+
+header>h1>a:hover {
+	/* color:rgba(77, 172, 255, 1.0); */
+	color:rgba(225, 225, 225, 1.0);
+}
+
+.blog-description {
+	color:rgba( 0, 0, 0, 0.45 );
+	/* text-shadow: -1px -1px 1px rgba( 255, 255, 255, 0.25 ); */
+}
+
+#header>h1>a {
+	text-decoration: none;
+    line-height:2;
+    font-size:100%;
+}
+
+#header>p {
+    text-align:right;
+    margin-top:0;
+}
+
+#header>h1 {
+	margin-bottom:0;
+}
+
+
+
+
+
+
+
+#col-left>header, #col-left>#nav {
+	margin: 0 10px;
+}
+
+#col-right {
+	/* background-color:rgba( 255, 255, 255, 0.23 ); */
+	color:rgba( 0, 0, 0, 0.4)
+}
+
+
+
+
+
+
+/* *********************** post styles ********************* */
+
+.post-body {
+	border-bottom:1px solid rgba(0,0,0, 0.25);
+	margin-bottom:2em;
+}
+
+/* remove the border on the bottom for pages */
+body.page .post-body {
+	border-bottom:none;
+}
+
+.post-body p {
+	color:rgba( 0, 0, 0, 0.7);
+}
+
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5,
+.post-body h1 {
+	/* text-shadow: 0 1px 2px rgba(0,0,0,1.0); */
+	color:rgba( 0, 0, 0, 0.25);
+}
+
+.post-body a, .comment-text a {
+	text-decoration:underline;
+	color:rgba( 255, 255, 255, 0.85 );
+	text-shadow: 0 0 2px #000;
+}
+
+.post-body a:hover, .comment-text a:hover {
+	color:rgba( 255, 255, 255, 0.85 );
+	text-shadow:none;
+}
+
+
+.page .post-edit-link {
+	font-size: 125%;
+	display: block;
+	text-align: center;
+	display: block;
+	background-image:url(stripe5.png);
+}
+
+.page .post-edit-link:hover {
+	color: rgba( 0, 0, 0, 1.0);
+	text-shadow: 0 0 2px #FFF;
+}
+
+
+.post-title>h3>a, .page .post-edit-link {
+	color: rgba( 255, 255, 255, 0.85 );
+}
+
+.post-title>h3>a:hover {
+	text-shadow: 0 0 2px #000;
+}
+
+
+
+
+.post-body p, .post-title>h3>a, .page .post-edit-link {
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:1em;
+	margin-top:0;
+}
+
+body.page .post-body p {
+	margin-left:0;
+	margin-right:20px;
+}
+
+.post-body pre {
+	background-color:rgba( 255, 255, 255, 0.5 );
+	padding:1em;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	-o-border-radius: 1em;
+}
+
+
+/* Post styles */
+.post-body h1, 
+.post-body h2, 
+.post-body h3, 
+.post-body h4, 
+.post-body h5, 
+.post-body h6 {
+	
+}
+
+.post-body p, 
+.post-body h1,
+.post-body h2,
+.post-body h3,
+.post-body h4,
+.post-body h5,
+.post-body h6 {
+    margin-top:0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.post-title a {
+    text-decoration: none;
+}
+
+
+
+.post-divider {
+	
+}
+
+#post-next, #post-prev {
+	margin-bottom:1em;
+}
+
+#post-nav>p {
+	font-family: 'Dosis', sans-serif;
+	font-weight:bold;
+	color:rgba( 90, 90, 90, 0.5 );
+	/* text-shadow: 1px 1px 1px rgba( 0, 0, 0, 1.0 ); */
+	text-align: right;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+#post-next>a, #post-prev>a, #post-nav>p>a {
+	font-family: 'Dosis', sans-serif;
+	font-weight:bold;
+	color:#FFF;
+	text-shadow: 1px 1px 1px #333;
+}
+
+#post-next>a {
+	text-align:right;
+	display: block;
+}
+
+#post-next>a:hover, #post-prev>a:hover, #post-nav>p>a:hover {
+	color:rgba( 0, 0, 0, 1.0);
+	text-shadow: 0px 0px 2px #FFF;
+}
+
+#post-prev {
+
+}
+
+
+
+
+/* ******************* Style the more link */
+a.more-link {
+	display:block;
+	/* border-top:1px solid rgba(0,0,0, 0.25); */
+	text-align: right;
+	text-decoration:none !important;
+	font-weight:bold;
+	clear: both;
+	text-shadow: none;
+	/* color:rgba( 0, 0, 255, 0.5 ) !important; */
+}
+
+a.more-link {
+	color: rgba( 255, 255, 255, 0.85 );
+}
+
+a.more-link:hover {
+	/* color: rgba(77, 172, 255, 1.0); */
+	text-shadow: 0 0 2px #000;
+}
+
+
+
+/* *************************** Post Meta */
+
+.post-meta li, .vcard {
+	text-align:right;
+}
+
+.post-meta a, .vcard a {
+	color:rgba( 255, 255, 255, 0.75 );
+}
+
+.comment-edit-link {
+	margin-right: 10px;
+}
+
+.post-meta a:hover, .vcard a:hover {
+	color:rgba( 255, 255, 255, 1.0 );
+	text-shadow: 0 0 2px #000;
+}
+
+.post-date {
+	font-size:200%;
+	color:rgba( 0, 0, 0, 0.25);
+}
+
+
+/* post meta styles */
+.post-meta>ul {
+    margin:0 10px;
+    padding:0;
+    list-style-type:none;
+}
+
+
+
+
+
+/* ****************************************** */
+.wp-caption {
+
+}
+
+.wp-caption-text {
+
+}
+
+.sticky {
+
+}
+
+.gallery-caption  {
+
+}
+
+.bypostauthor {
+
+}
+/* ****************************************** */
+
+
+
+
+
+
+
+/* ******************** Page Nav **************** */
+
+#page-nav {
+	margin-bottom:1em;
+}
+
+#page-nav>ul {
+	margin-left:10px;
+	float:right;
+}
+
+#page-nav>ul>li {
+	float:left;
+}
+
+/* Page Nav */
+#page-nav>ul {
+	margin-left:10px;
+	margin-right:10px;
+}
+#page-nav li {
+	margin:0;
+	padding:0;
+	list-style-type: none;
+}
+
+#page-nav {
+	margin-top: 42px;
+}
+
+/* Current Link styles for main pages nav */
+#page-nav li>a {
+	display:block;
+	/* background-color:#999; */
+	float:left;
+	padding: 5px;
+	margin-right: 1px;
+	font-family: 'Dosis', sans-serif;
+	font-weight:bold;
+	
+	color:#eee;
+	text-shadow: 1px 1px 1px #333;
+}
+
+#page-nav li>a:hover {
+	/* background-color:rgba( 255, 255, 255, 0.5 ); */
+	color:rgba( 0, 0, 0, 1.0);
+	text-shadow: 0px 0px 2px #FFF;
+}
+
+#page-nav li.current_page_item>a, 
+#page-nav li.current_page_item>a:hover,
+#page-nav li.current-menu-item>a, 
+#page-nav li.current-menu-item>a:hover {
+	/* background-color:rgba( 0, 0, 0, 0.5 ); */
+	color:rgba( 255, 255, 255, 0.65);
+	background-image:url(stripe5.png);
+	text-shadow:none; /* 0px 0px 2px #000; */
+}
+
+
+
+
+#content {
+	
+}
+
+
+
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	
+}
+
+
+
+
+
+
+
+/* Sidebar styles */
+#nav, #nav ul, #nav li {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+
+
+
+
+
+
+
+
+
+/* ************ post img styles ************** */
+.post-body img {
+	padding:0.5em;
+	background:rgba( 0, 0, 0, 0.05 );
+	/*box-shadow: 0 0 2px rgba( 0, 0, 0, 0.25 ); */
+}
+
+img.alignright, div.alignright {
+	float:right; 
+	margin:0 0 1em 1em;
+}
+
+img.alignleft, div.alignleft {
+	float:left; 
+	margin:0 1em 1em 0;
+}
+
+img.aligncenter, div.aligncenter {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.alignright {
+	float:right; 
+}
+
+.alignleft {
+	float:left; 
+}
+
+.aligncenter {
+	display: block; 
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+
+
+
+/* ***************Sidebar styles ******** */
+#nav h3 {
+	color:rgba( 155, 155, 155, 1.0);
+	text-shadow: 1px 1px 1px rgba( 0, 0, 0, 1.0 );
+	margin-bottom:0;
+	border-bottom:1px solid rgba( 255, 255, 255, 0.15);
+	padding-bottom:0.5em;
+	margin-bottom:0.5em;
+}
+
+#nav li>a {
+	color:rgba(77, 172, 255, 1.0);
+	text-shadow: 1px 1px 1px rgba( 0,0,0, 1.0)
+}
+
+#nav li>a:hover {
+	color:rgba( 255, 255, 255, 1.0);
+}
+
+#nav li.current_page_item>a, 
+#nav li.current-cat>a {
+	color:rgba(255, 255, 255, 1.0);
+}
+
+
+
+
+
+
+/* Style the widget Calendar */
+.widget_calendar table {
+	width:100%;
+}
+
+.widget_calendar caption {
+	border-bottom:1px solid black;
+}
+
+.widget_calendar td {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+/* ********* Post Block Quote *********** */
+#content blockquote {
+	font-size:125%;
+	color:#888;
+	font-style: italic;
+	font-family: Georgia;
+	background: url(quotes.png) no-repeat left top;
+	margin:0;
+	padding-left: 2em;
+	padding-top:1em;
+}
+
+
+
+
+#footer-wrap {
+	background-color: rgba( 0, 0, 0, 0.5 );
+	text-align: center;
+}
+
+footer p {
+	color:#aaa;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+footer a {
+	color:rgba(77, 172, 255, 1.0);
+}
+
+footer a:hover {
+	color:rgba(255, 255, 255, 1.0);
+}
+
+
+
+
+
+
+/* Comment Form */
+#comments {
+	position:relative;
+}
+
+#comments form, #comments fieldset {
+	margin:0;
+	padding:0;
+	border:none;
+	display:block;
+}
+
+#comments form label {
+	text-align:right;
+}
+
+#comments .commentlist, #comments ul, #comments li {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+#comments li {
+	margin-bottom: 1em;
+}
+
+.avatar {
+	padding:10px;
+	margin:0 10px 0 46px;
+	background:rgba( 0, 0, 0, 0.05 );
+}
+
+.vcard {
+	
+}
+
+.comment {
+	margin-bottom: 1em;
+}
+
+.comment-meta, .comment-date {
+	margin-right: 10px;
+}
+
+#commentform input, #commentform textarea {
+	
+}
+
+#commentform label {
+	font-weight: bold;
+	line-height:3;
+}
+
+#author, #email, #url, #comment {
+	background-color: rgba( 255, 255, 255, 0.15 );
+	border:none;
+	padding:0.5em;
+	width:300px;
+	box-shadow: 0 0 4px rgba(0,0,0, 1 ) inset;
+	-webkit-border-radius: 0.25em;
+	margin-bottom: 1em;
+	font-size:125%; 
+}
+
+#comment {
+	height: 7em;
+}
+

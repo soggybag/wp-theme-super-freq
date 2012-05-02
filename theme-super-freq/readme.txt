@@ -1,0 +1,1 @@
+A theme in gray with stripes. Sort of web design 2005.
